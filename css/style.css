@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.debug {
+  background-color: rgba(50, 72, 152, 0.3);
+}
+main {
+  width: 100%;
+  height: calc(100vh - 180px);
+}
+.top-bar, .bottom-bar {
+  width: 100%;
+  height: 90px;
+}
+.left-bar {
+  width: 220px;
+  height: calc(100vh - 90px);
+  position: absolute;
+  top: 0;
+}
