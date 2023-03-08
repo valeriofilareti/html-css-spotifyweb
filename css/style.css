@@ -7,6 +7,9 @@
 .d-flex {
   display: flex;
 }
+.wrap {
+  flex-wrap: wrap;
+}
 .justify-center {
   justify-content: center;
 }
@@ -19,13 +22,16 @@
 .debug {
   background-color: rgba(50, 72, 152, 0.3);
 }
+main {
+  width: 100%;;
+}
 /* general */
 /* left-bar */
 .left-bar, .right {
   height: calc(100vh - 90px);
 }
 .left-bar {
-  max-width: 220px;
+  max-width: 150px;
 }
 .logo-img{
   width: 40px;
@@ -45,7 +51,7 @@
   margin: 10px;
 }
 .left-bar .playlist {
-  width: 180px;
+  width: 150px;
   overflow: auto;
   height: calc(100vh - 320px);
 } 
@@ -61,6 +67,22 @@
   position: fixed;
   z-index: 999;
 }
+.main-container {
+  margin-top: 80px;
+}
+.main-container nav ul li {
+  list-style: none;
+  padding: 18px;
+}
+.right .col {
+  width: calc(100% / 6);
+  height: 300px;
+  /* height: 10vw;
+  min-width: 100px;
+  min-height: 100px; */
+  background-color: red;
+  border: 1px solid black;
+}
 /* /main-right */
 /* bottom-bar */
 .bottom-bar {
@@ -68,3 +90,20 @@
   height: 90px;
 }
 /* /bottom-bar */
+
+
+
+/* RESPONSIVE */
+@media screen and (max-width:992px) {
+  .right .col {
+    width: calc(100% / 4);
+  }
+}
+@media screen and (max-width:768px) {
+  .right .col {
+    width: calc(100% / 2);
+  }
+}
+@media screen and (max-width:576px) {
+  
+}
