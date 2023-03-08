@@ -1,22 +1,70 @@
+/* general */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+.d-flex {
+  display: flex;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.align-center {
+  align-items: center;
+}
 .debug {
   background-color: rgba(50, 72, 152, 0.3);
 }
-main {
-  width: 100%;
-  height: calc(100vh - 180px);
+/* general */
+/* left-bar */
+.left-bar, .right {
+  height: calc(100vh - 90px);
 }
-.top-bar, .bottom-bar {
+.left-bar {
+  max-width: 220px;
+}
+.logo-img{
+  width: 40px;
+  height: 40px;
+  background-color: aqua;
+}
+.logo-text {
+  font-size: 30px;
+}
+.left-bar-menu {
+  margin-top: 50px;
+}
+.left-bar-menu .icon {
+  width: 20px;
+  height: 20px;
+  background-color: antiquewhite;
+  margin: 10px;
+}
+.left-bar .playlist {
+  width: 180px;
+  overflow: auto;
+  height: calc(100vh - 320px);
+} 
+/* /left-bar */
+/* main-right */
+.right {
+  width: 100%;
+  overflow: auto;
+}
+.top-bar {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  z-index: 999;
+}
+/* /main-right */
+/* bottom-bar */
+.bottom-bar {
   width: 100%;
   height: 90px;
 }
-.left-bar {
-  width: 220px;
-  height: calc(100vh - 90px);
-  position: absolute;
-  top: 0;
-}
+/* /bottom-bar */
