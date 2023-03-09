@@ -27,7 +27,7 @@
       <!-- left-menu -->
       <div class="left-bar-menu">
         <div class="row">
-          <div class="col d-flex align-center">
+          <div class="col d-flex align-center" id="active">
             <div class="icon">
               <img src="img/home.svg" alt="">
             </div>
@@ -95,7 +95,11 @@
     <!-- /left-bar -->
     <!-- main-right -->
     <div class="right">
-      <div class="top-bar"></div>
+      <!-- top-bar -->
+      <div class="top-bar d-flex align-center">
+        <a href="#"><span class="btn">EFFETTUA L'UPGRADE</span></a> 
+      </div>
+      <!-- /top-bar -->
       <div class="main-container">
         <!-- menu -->
         <nav class="d-flex justify-center">
@@ -108,7 +112,7 @@
             <li><a href="#">scopri</a></li>
           </ul>
         </nav>
-        <!-- menu -->
+        <!-- /menu -->
         <h2>Recently-played</h2>
         <!-- recently-played -->
         <div class="recently-played row d-flex wrap">
@@ -306,7 +310,10 @@
       </div>
       <div class="player-bottom d-flex align-center justify-between">
         <span>0:25</span>
-        <div class="bar"></div>
+        <div class="bar">
+          <div class="played bar"></div>
+          <div class="pointer"></div>
+        </div>
         <span>4:35</span>
       </div>
     </div>
