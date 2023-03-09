@@ -213,6 +213,9 @@ main {
 nav {
   margin-bottom: 40px;
 }
+nav + h2 {
+  padding-bottom: 20px;
+}
 .right h2 {
   margin: 5px 10px; 
 }
@@ -252,6 +255,7 @@ img {
 .card {
   padding: 10px;
   margin-bottom: 50px;
+  text-align: center;
 }
 .overlay {
   width: 100%;
