@@ -36,6 +36,16 @@ h2, h3 {
   position: absolute;
   background-color: white;
 }
+.player-bottom .bar,
+.left-bar-menu .col,
+.playlist span,
+.new-playlist,
+.user .txt,
+.txt > span,
+.icons-box .icon,
+.overlay {
+  cursor: pointer;
+}
 .d-flex {
   display: flex;
 }
@@ -78,9 +88,6 @@ main {
 .left-bar-menu .row {
   margin: 20px 0;
 }
-.left-bar-menu .col {
-  cursor: pointer;
-}
 .left-bar-menu .icon {
   width: 28px;
   height: 28px;
@@ -98,6 +105,9 @@ main {
   height: 40px;
   position: absolute;
   left: 0;
+}
+.left-bar-menu .text:hover {
+  color: white;
 }
 /* /menu */
 /* playlist */
@@ -121,6 +131,13 @@ main {
 }
 .new-playlist {
   padding: 10px 0;
+}
+.playlist span:hover,
+.left-bar .new-playlist .name:hover {
+  color: white;
+}
+.left-bar .new-playlist .cover:hover {
+  background-color: white;
 }
 /* /playlist */
 /* user */
@@ -149,6 +166,12 @@ main {
   width: 100%;
   margin: 13px 0px;
   border: 1px solid #7f7f7f;;
+}
+.user .txt {
+  cursor: pointer;
+}
+.user .txt:hover {
+  color: white;
 }
 /* /user */
 /* /left-bar */
@@ -239,7 +262,6 @@ img {
   top: 0;
   left: 0;
   opacity: 0;
-  cursor: pointer;
 }
 .overlay i {
   font-size: 100px;
@@ -306,6 +328,14 @@ img {
   width: 20px;
   height: 20px;
   margin-right: 10px;
+  color: #878787;
+}
+.icons-box .icon:hover {
+  color: white;
+}
+.txt > span:hover {
+  color: white;
+  text-decoration: underline;
 }
 /* /left-player */
 /* player */
@@ -345,7 +375,6 @@ img {
 }
 .player-bottom .bar {
   width: 85%;
-  cursor: pointer;
 }
 .player .played.bar {
   width: 7%;
