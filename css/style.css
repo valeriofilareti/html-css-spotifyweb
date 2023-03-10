@@ -15,6 +15,9 @@ body {
 h2, h3 {
   color: white;
 }
+img {
+  max-width: 100%;
+}
 .left-bar, .bottom-bar {
   background-color: black;
 }
@@ -35,6 +38,23 @@ h2, h3 {
 .played.bar {
   position: absolute;
   background-color: white;
+}
+.played.bar::after {
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  display: none;
+  right: -8px;
+  top: -5px;
+}
+.bar:hover .played.bar{
+  background-color: #adff30;
+}
+.bar:hover .played.bar::after{
+  display: block;
 }
 .player-bottom .bar,
 .left-bar-menu .col,
@@ -227,6 +247,15 @@ nav + h2 {
   padding-bottom: 20px;
 }
 /* menu */
+#right-active::after {
+  content: "";
+  width: 50px;
+  height: 3px;
+  display: block;
+  margin-left: 18px;
+  margin-top: 3px;
+  background-color:#adff30;
+}
 .main-container nav ul li {
   list-style: none;
   padding: 18px;
@@ -245,9 +274,6 @@ nav + h2 {
 /* cards */
 .right .col {
   width: calc(100% / 6);
-}
-img {
-  max-width: 100%;
 }
 .card-img {
   position: relative;
@@ -389,16 +415,10 @@ img {
   left: 42%;
   bottom: 15px;
 }
-.bar:hover .played.bar{
-  background-color: #adff30;
-}
-.bar:hover .pointer{
-  display: block;
-}
 .player-bottom span {
   font-size: 10px;
 }
-/* player */
+/* /player */
 /* controls */
 .bottom-bar .controls {
   justify-content: flex-end;
